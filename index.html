@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIMS Hospitals</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="./styles/output.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+   
 </head>
+ 
 <body class="font-sans">
+    
     <!-- Top Blue Bar -->
-    <div class="bg-blue-600 text-white py-1.5 px-1.5">
-        <div class="container mx-auto text-center md:text-center">
+    <div class="bg-blue-400 text-white py-1.5 px-1.5">
+        <div class="container md:flex-row mx-auto text-center md:text-center md:space-y-0 md:space-x-6 w-full md:w-auto">
             <span class="inline-flex text-center items-center">
                 <i class="fas fa-phone-alt mr-2"></i>
                 <a href="Telephone" class="underline hover:text-blue-200">Dial 040-44885000</a>
@@ -26,13 +30,34 @@
             <div class="flex items-center text-gray-700">
                 <i class="mr-2 text-gray-600"></i>
                 <span class="mr-1">Location:</span>
-                <span class="text-blue-600 font-medium flex items-center">
+            <div class="dropdown relative">
+                <button class="bg-kims-blue text-blue-600 px-2 py-1 rounded flex items-center">
                     SECUNDERABAD
                     <i class="fas fa-chevron-down ml-1 text-blue-600"></i>
-                </span>
+                    <div class="absolute z-10 group-hover:block bg-white shadow-lg rounded-md mt-1 w-48 left-0 md:left-auto md:right-0">
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Nellore</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Srikakulam</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Vizag - Sheela nagar</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Kurnool</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Gachibowli</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Vizag - MVP Colony</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Nashik</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Guntur</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Thane</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Kondapur</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Rajahmundry</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Ongole</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Anantapur</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Begumpet</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Nagpur</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Kannur</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Seethammandhara</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sangli</a>
+                        </div>
+                </button>
             </div>
             
-            <div class="hidden lg:flex items-center text-sm">
+            <div class="hidden lg:flex items-center text-sm md:mt-0">
                 <span class="text-gray-700">Emergency: Secunderabad - 040-46324365</span>
                 <i class="fas fa-chevron-down ml-1 text-gray-500 text-xs"></i>
                 <span class="mx-3 text-gray-400">|</span>
@@ -62,7 +87,7 @@
                     <div class="flex items-center">
                         <div class="text-red-500 mr-1">
                             <a href="/">
-                                <img src="./kims_logo.dd3a9a1.png" alt="KIMS LOGO">
+                                <img src="./images/kims_logo.dd3a9a1.png" alt="KIMS LOGO">
                             </a>
                         </div>
                     </div>
@@ -87,6 +112,12 @@
                         <i class="fas fa-headset text-gray-600 mr-2"></i>
                         <span>Request a Callback</span>
                         <i class="fas fa-chevron-down ml-2 text-gray-500"></i>
+                        <div class="absolute z-10 group-hover:block bg-white shadow-lg rounded-md mt-1 w-48 right-0">
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Request a callback</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Book an appointment</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Check reports</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Find a doctor</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -242,49 +273,49 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <img src="./speciality_accident.png" alt="Accident Icon" class="h-10 w-10 mb-4">
+                    <img src="./images/speciality_accident.png" alt="Accident Icon" class="h-10 w-10 mb-4">
                     <h3 class="text-xl font-semibold text-blue-700 mb-2">Accident</h3>
                     <p class="text-gray-600 text-sm">KIMS Accident & Emergency Medical Services Department provides 24-hour service for trauma and non-trauma surgical and me...</p>
                     <a href="#" class="text-blue-600 hover:underline mt-4 inline-block">Read More...</a>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <img src="./speciality_andrology.png" alt="Andrology Icon" class="h-10 w-10 mb-4">
+                    <img src="./images/speciality_andrology.png" alt="Andrology Icon" class="h-10 w-10 mb-4">
                     <h3 class="text-xl font-semibold text-blue-700 mb-2">Andrology and Male Infertility Centre</h3>
                     <p class="text-gray-600 text-sm">At KIMS, our Andrology and Infertility specialists have years of experience in treating male fertility issues. They work...</p>
                     <a href="#" class="text-blue-600 hover:underline mt-4 inline-block">Read More...</a>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <img src="./speciality_arthroscopy.png" alt="Arthroscopy Icon" class="h-10 w-10 mb-4">
+                    <img src="./images/speciality_arthroscopy.png" alt="Arthroscopy Icon" class="h-10 w-10 mb-4">
                     <h3 class="text-xl font-semibold text-blue-700 mb-2">Arthroscopy Centre</h3>
                     <p class="text-gray-600 text-sm">Arthroscopy is a procedure to look inside a joint by using an arthroscope. An arthroscope is like a thin telescope......</p>
                     <a href="#" class="text-blue-600 hover:underline mt-4 inline-block">Read More...</a>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <img src="./speciality_biochemistry.png" alt="Biochemistry Icon" class="h-10 w-10 mb-4">
+                    <img src="./images/speciality_biochemistry.png" alt="Biochemistry Icon" class="h-10 w-10 mb-4">
                     <h3 class="text-xl font-semibold text-blue-700 mb-2">Biochemistry</h3>
                     <p class="text-gray-600 text-sm">Biochemistry...</p>
                     <a href="#" class="text-blue-600 hover:underline mt-4 inline-block">Read More...</a>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <img src="./1-alzheimers-clinic_1572888707.png" alt="Alzheimers Icon" class="h-10 w-10 mb-4">
+                    <img src="./images/1-alzheimers-clinic_1572888707.png" alt="Alzheimers Icon" class="h-10 w-10 mb-4">
                     <h3 class="text-xl font-semibold text-blue-700 mb-2">Alzheimers Centre</h3>
                     <p class="text-gray-600 text-sm">The Alzheimer's Treatment Center at KIMS is a collaborative partnership between the departments of psychiatry, neurology,....</p>
                     <a href="#" class="text-blue-600 hover:underline mt-4 inline-block">Read More...</a>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <img src="./2-anesthesiology_1570789457.png" alt="Anesthesiology Icon" class="h-10 w-10 mb-4">
+                    <img src="./images/2-anesthesiology_1570789457.png" alt="Anesthesiology Icon" class="h-10 w-10 mb-4">
                     <h3 class="text-xl font-semibold text-blue-700 mb-2">Anesthesiology</h3>
                     <p class="text-gray-600 text-sm">At KIMS, Department of Anesthesiology, our mission is to excel in all aspects of Anesthesia, Pain Management, and Critical Care.....</p>
                     <a href="#" class="text-blue-600 hover:underline mt-4 inline-block">Read More...</a>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <img src="./3-bariatric_1570789470.png" alt="Bariatric Surgery Icon" class="h-10 w-10 mb-4">
+                    <img src="./images/3-bariatric_1570789470.png" alt="Bariatric Surgery Icon" class="h-10 w-10 mb-4">
                     <h3 class="text-xl font-semibold text-blue-700 mb-2">Bariatric Surgery</h3>
                     <p class="text-gray-600 text-sm">Obese people often suffer serious health problems and have higher rates of heart attacks, strokes, diabetes, and cancer.......</p>
                     <a href="#" class="text-blue-600 hover:underline mt-4 inline-block">Read More...</a>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <img src="./4-bone-marrow_1570789482.png" alt="Bone and Joint Centre Icon" class="h-10 w-10 mb-4">
+                    <img src="./images/4-bone-marrow_1570789482.png" alt="Bone and Joint Centre Icon" class="h-10 w-10 mb-4">
                     <h3 class="text-xl font-semibold text-blue-700 mb-2">Bone and Joint Centre</h3>
                     <p class="text-gray-600 text-sm">Our all-inclusive specialty Bone and Joint Center features a comprehensive team of physicians committed to providing .......</p>
                     <a href="#" class="text-blue-600 hover:underline mt-4 inline-block">Read More...</a>
@@ -300,18 +331,18 @@
             <h2 class="text-3xl font-bold text-red-600 mb-8 text-center">Our Patients</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <img src="./patient_testimonial_placeholder_1.png" alt="Patient Testimonial" class="w-full h-48 object-cover rounded-md mb-4">
+                    <img src="./images/patient_testimonial_placeholder_1.png" alt="Patient Testimonial" class="w-full h-48 object-cover rounded-md mb-4">
                     <p class="text-gray-700 italic mb-4">"Testimonial text will go here. This is a placeholder for a patient's positive experience."</p>
                     <p class="text-right font-semibold text-blue-700">- Patient Name</p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <img src="./patient_testimonial_placeholder_2.png" alt="Patient Testimonial" class="w-full h-48 object-cover rounded-md mb-4">
+                    <img src="./images/patient_testimonial_placeholder_2.png" alt="Patient Testimonial" class="w-full h-48 object-cover rounded-md mb-4">
                     <p class="text-gray-700 italic mb-4">"Another great story from one of our valued patients. We strive for excellence in care."</p>
                     <p class="text-right font-semibold text-blue-700">- Another Patient</p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-lg">
                     
-                     <img src="./patient_testimonial_placeholder_1.png" alt="Patient Testimonial" class="w-full h-48 object-cover rounded-md mb-4">
+                     <img src="./images/patient_testimonial_placeholder_1.png" alt="Patient Testimonial" class="w-full h-48 object-cover rounded-md mb-4">
                     <p class="text-gray-700 italic mb-4">"Exceptional service and compassionate staff. Highly recommend KIMS Hospitals."</p>
                     <p class="text-right font-semibold text-blue-700">- Satisfied Patient</p>
                 </div>
@@ -326,7 +357,7 @@
                 <div>
                     <h5 class="text-lg font-semibold text-white mb-4">KIMS Hospitals</h5>
                     <p class="text-sm mb-4">KIMS Hospitals is one of the largest corporate healthcare groups in India with hospitals in Telangana, Andhra Pradesh, Maharashtra, Karnataka, and Kerala...</p>
-                    <img src="./kims_logo.png" alt="KIMS Logo White" class="h-10 filter invert brightness-0">
+                    <img src="./images/kims_logo.png" alt="KIMS Logo White" class="h-10 filter invert brightness-0">
                 </div>
                 <div>
                     <h5 class="text-lg font-semibold text-white mb-4">Quick Links</h5>
