@@ -7,7 +7,13 @@
     <link href="./styles/output.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-   
+    <script src="./script.js"></script>
+
+    <style>
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
 </head>
  
 <body class="font-sans">
@@ -31,10 +37,10 @@
                 <i class="mr-2 text-gray-600"></i>
                 <span class="mr-1">Location:</span>
             <div class="dropdown relative">
-                <button class="bg-kims-blue text-blue-600 px-2 py-1 rounded flex items-center">
+                <button id="locationDropdownBtn" class="bg-kims-blue text-blue-600 px-2 py-1 rounded flex items-center">
                     SECUNDERABAD
                     <i class="fas fa-chevron-down ml-1 text-blue-600"></i>
-                    <div class="absolute z-10 group-hover:block bg-white shadow-lg rounded-md mt-1 w-48 left-0 md:left-auto md:right-0">
+                    <div id="locationDropdown" class="hidden absolute z-10 bg-white shadow-lg rounded-md mt-1 w-48 left-0 md:left-auto md:right-0 hidden group-hover:block">
                             <a href="#" class="block px-4 py-2 hover:bg-gray-100">Nellore</a>
                             <a href="#" class="block px-4 py-2 hover:bg-gray-100">Srikakulam</a>
                             <a href="#" class="block px-4 py-2 hover:bg-gray-100">Vizag - Sheela nagar</a>
@@ -109,10 +115,10 @@
                 
                 <div>
                     <div class="flex items-center border border-gray-300 rounded px-4 py-2">
-                        <i class="fas fa-headset text-gray-600 mr-2"></i>
+                        <button id="callbackDropdownBtn" class="fas fa-headset text-gray-600 mr-2"></i>
                         <span>Request a Callback</span>
                         <i class="fas fa-chevron-down ml-2 text-gray-500"></i>
-                        <div class="absolute z-10 group-hover:block bg-white shadow-lg rounded-md mt-1 w-48 right-0">
+                        <div id="callbackDropdown" class="hidden absolute z-10 group-hover:block bg-white shadow-lg hidden rounded-md mt-1 w-48 right-0">
                             <a href="#" class="block px-4 py-2 hover:bg-gray-100">Request a callback</a>
                             <a href="#" class="block px-4 py-2 hover:bg-gray-100">Book an appointment</a>
                             <a href="#" class="block px-4 py-2 hover:bg-gray-100">Check reports</a>
